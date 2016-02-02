@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=«ru»>
+<html lang=«ru»> <!-- «» -->
  <head>
    <meta charset="utf-8">
    <title>Барбершоп "Бородинский"</title>
@@ -34,18 +34,18 @@
        </div>
      </div>
    </header>
-   <main class="container">
-     <legend>Средства для ухода</legend>
-     <div class=«breadcrumbs»>
+   <main class="container"> <!-- Форма для входа где-то ниже -->
+     <legend>Средства для ухода</legend><!--  Не, это не формочка, тут обычный заголовок вместе легенда -->
+     <div class=«breadcrumbs»> <!-- "КА"- парапа папа папа -->
        <ul>
          <li>
-           <a class=«crumbs» href=«#»>Главная</a>
+           <a class=«crumbs» href=«#»>Главная</a> <!-- "ВЫ" - парапа папа папа -->
          </li>
          <li>
-           <a class=«crumbs» href=«#»>Магазин</a>
+           <a class=«crumbs» href=«#»>Магазин</a> <!-- "ЧКИ" - парапа папа папа -->
          </li>
          <li>
-          <a class=«crumbs checked» href=«#»>Средства для ухода</a>
+          <a class=«crumbs checked» href=«#»>Средства для ухода</a> <!-- "КА-ВЫ-ЧКИ" :^)  И последним пунктом не ссылка, т.к. неактивный элемент -->
          </li>
        </ul>
      </div>
@@ -53,9 +53,9 @@
       <form action="https://barbershop/shop.ru" method="get">
         <legend>Производители:</legend>
          <label>
-          <input type="checkbox" name="california" id="california-field" checked> Baxter of California
-         </label>
-        <br>
+          <input type="checkbox" name="california" id="california-field" checked> <!-- Baxter of California
+         </label> Атрибут name у чекбоксов одинаковый, чтобы понять, что они к одной и той же группе относятся (Как у radio), а вот атрибут value - разный  -->
+        <br> <!-- Можно без них обойтись -->
          <label>
           <input type="checkbox" name="natty" id="natty-field"> Mr Natty
          </label>
@@ -88,13 +88,13 @@
          <label>
            <input type="radio" name="groups" value="БАксессуары"> Аксессуары
          </label>
-       <button type="submit" value="Показать">
+        <button type="submit" value="Показать">
        </form>
      </div>
      <div class="goods-catalog">
        <div class="goods-card">
          <a class="goods-card-photo" href="#"><img src="карточка1"></a>
-         <p class="goods-card-name">Набор для путешествий <br> "Baxter of California"</p>
+         <p class="goods-card-name">Набор для путешествий <br> "Baxter of California"</p> <!-- По спецификации делается двумя параграфами, завёрнутыми в ссылку -->
          <div class="goodscard-price">
            <span>2 900 руб.</span>
            <a class="btn" href="#">Купить</a>
@@ -141,9 +141,9 @@
          </div>
        </div>
      </div>
-     <div class="pagination">
+     <div class="pagination"> <!-- А сделай внутри списочек -->
        <a class="paginator" href="#">1</a>
-       <a class="paginator selected" href="#">2</a>
+       <a class="paginator selected" href="#">2</a> <!-- paginator и paginator-selected, а то мало ли какие у тебя элементы будут на странице с классом selected. + выбранная страница неактивна, т.е. вместо ссылки что-то другое -->
        <a class="paginator" href="#">3</a>
        <a class="paginator" href="#">4</a>
      </div>
